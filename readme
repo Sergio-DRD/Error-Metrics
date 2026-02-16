@@ -1,0 +1,147 @@
+# Error Metrics — Free Word Error Rate (WER) Calculator
+## Project info
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Live App](https://img.shields.io/badge/Live-wer.lovable.app-green)](https://wer.lovable.app)
+**URL**: https://lovable.dev/projects/aaf25cbe-5206-4726-ae67-d4242318fbf6
+**Error Metrics** is a free, professional-grade Word Error Rate (WER) calculator for evaluating Automatic Speech Recognition (ASR) accuracy. All processing happens 100% in your browser — your transcripts never leave your device.
+## How can I edit this code?
+🔗 **Live App:** [https://wer.lovable.app](https://wer.lovable.app)
+There are several ways of editing your application.
+---
+
+## ✨ Key Features
+visit errormetrics.com and start prompting.
+| Feature | Description |
+|---|---|
+| **WER Calculation** | Industry-standard formula: `(S + D + I) / N × 100%` using Levenshtein distance at the word level |
+| **Visual Diff Analysis** | Color-coded highlighting of substitutions, deletions, and insertions between reference and hypothesis |
+| **Batch Processing** | Analyze multiple transcript pairs at once with aggregate stats, accuracy distributions, and error heatmaps |
+| **Engine Comparison** | Compare multiple ASR engines side-by-side against a single reference transcript |
+| **Analysis History** | Automatic saving of results to browser localStorage for easy access to past comparisons |
+| **Multilingual Support** | Pre-loaded examples in English, Spanish, Arabic, and Mandarin Chinese |
+| **Privacy First** | Zero server uploads, zero API calls, zero cookies, zero tracking |
+| **Works Offline** | Fully functional after initial page load — even behind corporate firewalls |
+Changes made via Lovable will be committed automatically to this repo.
+---
+**Use your preferred IDE**
+## 🎯 Who Is This For?
+If you want to work locally using your own IDE, you can clone this repo and push changes. 
+- **ASR Engineers** — Fine-tune speech recognition models by identifying systematic error patterns
+- **QA Teams** — Validate ASR quality in production, set benchmarks, and ensure SLAs with objective metrics
+- **ML Researchers** — Compare architectures, evaluate training approaches, and publish reproducible accuracy metrics
+- **Product Managers** — Make data-driven decisions about ASR providers and evaluate switching ROI
+- **NLP Engineers** — Assess downstream impact of transcription errors on text processing pipelines
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
+Follow these steps:
+## 🚀 Common Use Cases
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+- Evaluating commercial ASR APIs (Google Cloud, AWS Transcribe, Azure Speech, OpenAI Whisper)
+- Benchmarking custom-trained speech recognition models
+- A/B testing different ASR configurations and parameters
+- Identifying domain-specific vocabulary that causes recognition errors
+- Measuring transcription quality across different audio conditions
+- Comparing multilingual ASR performance across languages
+- Validating transcription quality before deploying to production
+- Generating quality reports for stakeholders and clients
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+---
+# Step 3: Install the necessary dependencies.
+npm i
+## 🔒 Privacy & Security
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+- **100% Client-Side Processing** — All calculations happen in your browser
+- **Zero Data Transmission** — Transcripts never leave your device
+- **No Cookies or Tracking** — No analytics, no telemetry
+- **All Data Stored Locally** — Browser localStorage only
+- **Works Behind Firewalls** — No hard external dependencies for core functionality
+**Edit a file directly in GitHub**
+---
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+**Use GitHub Codespaces**
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+## What technologies are used for this project?
+This project is built with:
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+## Corporate Network Compatibility
+## 🏢 Corporate Network Compatibility
+Error Metrics is designed to work seamlessly behind corporate firewalls and restrictive network policies:
+- **100% Client-Side Processing**: All WER calculations and analysis happen in your browser - no server-side processing required
+- **Zero Hard Dependencies**: Core functionality works completely offline once loaded
+- **Graceful Degradation**: Optional 3D background automatically falls back to CSS animations if external resources are blocked
+- **No Data Transmission**: Your transcripts never leave your device - all storage is local
+- **Self-Hosted Assets**: All critical resources are bundled, eliminating external dependencies
+- **Graceful Degradation** — Optional 3D background automatically falls back to CSS animations if external resources are blocked
+- **Self-Hosted Assets** — All critical resources are bundled, eliminating external dependencies
+For IT teams, we provide comprehensive documentation at `/it-documentation` including:
+- List of optional external domains (unpkg.com, prod.spline.design)
+For IT teams, comprehensive documentation is available at [`/it-documentation`](https://wer.lovable.app/it-documentation) including:
+- List of optional external domains
+- Security headers configuration (CSP, X-Frame-Options, etc.)
+- Whitelisting instructions
+- Privacy and data handling details
+## How can I deploy this project?
+---
+
+## 🛠️ Tech Stack
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Recharts](https://recharts.org/) for data visualization
+- [jsPDF](https://github.com/parallax/jsPDF) for PDF export
+Yes, you can!
+---
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📐 WER Formula
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```
+WER = (S + D + I) / N × 100%
+```
+| Symbol | Meaning |
+|--------|---------|
+| **S** | Substitutions — words replaced with incorrect words |
+| **D** | Deletions — words present in reference but missing from hypothesis |
+| **I** | Insertions — words in hypothesis that don't appear in reference |
+| **N** | Total number of words in the reference transcript |
+---
+## 🏃 Getting Started
+### Use the live app
+https://errormetrics.com/
+### Run locally
+```bash
+git clone <YOUR_GIT_URL>
+cd <YOUR_PROJECT_NAME>
+npm install
+npm run dev
+```
+Requires [Node.js](https://nodejs.org/) (v18+).
+---
+## 🤝 Why Choose Error Metrics?
+| | |
+|---|---|
+| **No Setup Required** | Start analyzing immediately — no API keys, no accounts, no installation |
+| **Works Offline** | All processing in-browser, works behind corporate firewalls |
+| **Completely Free** | No usage limits, no subscriptions, no hidden costs |
+| **Open & Transparent** | Deterministic algorithms with no black-box AI processing |
+---
+## 📄 License
+This project is released under the [MIT License](LICENSE). You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software.
+---
+## 👤 Created By
+**Sergio Del Rio** — Error Metrics is created and maintained for public open use.
